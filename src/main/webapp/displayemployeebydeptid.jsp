@@ -9,7 +9,7 @@
 <body>
 	<c:choose>
 		<c:when test="${not empty requestScope.empObject}">
-			<table>
+			<table cellspacing="10" border="1">
 				<tr>
 					<td>Employee No.</td>
 					<td>Department No.</td>
@@ -29,10 +29,6 @@
 						<td>${emp.salGrade}</td>
 					</tr>
 				</c:forEach>
-
-
-
-
 			</table>
 		</c:when>
 		<c:otherwise>
